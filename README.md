@@ -22,8 +22,8 @@ This repository contains a Python implementation of  the process of creating and
 The source code will perform the following operations:
 1. Create a new wallet (or load existing wallet) and generate 3 addresses A, B and C.
 3. Mine some initial blocks in order to fund address A and display the UTXO balance of A once it is funded.
-5. Ask the user the amount to be transferred from A to B, satisfying the condition
-   `0 < Amount ≤ UTXO(A)-Mining fee  `
+5. Ask the user the amount to be transferred from A to B, satisfying the condition<br>
+   `0 < Amount ≤ UTXO(A) - Mining fee  `
 
 4. Create a raw transaction transferring coins from A to B and decode it to extract the challenge script  `ScriptPubKey` and also display its size (in vbytes).
 5. Sign the transaction `A → B` using private key of A and broadcast it on the network. 	Display the transaction ID and transaction size (in vbytes).
@@ -47,7 +47,7 @@ The program assumes a transaction fee of `0.00001 BTC` by default. This fee is c
 ## How to Run the Python Codes ?
 1. The programs require you to have Bitcoin Core software and Python IDLE package installed on your device.
 2. Install and configure `bitcoind` on your system.
-3. For a Windows device, open File Explorer and go to the location `C:\Users\<username>\AppData\Roaming\Bitcoin`
+3. For a Windows device, open File Explorer and go to the location `C:\Users\<username>\AppData\Roaming\Bitcoin`<br>
    ( Replace `<username>` with your actual username ).
 5. Store the given `bitcoin.conf` file in this Bitcoin directory.
 6. Open Command Prompt and enter the following commands to launch Bitcoin Core in regtest mode:
