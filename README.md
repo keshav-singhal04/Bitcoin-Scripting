@@ -45,7 +45,7 @@ The program assumes a transaction fee of `0.00001 BTC` by default. This fee is c
 
 ---
 ## How to Run the Python Codes ?
-1. The programs require you to have Bitcoin Core software and Python IDLE package installed on your device.
+1. The program requires you to have Bitcoin Core software and Python IDLE package installed on your device.
 2. Install and configure `bitcoind` on your system.
 3. Install the Python library `python-bitcoinrpc` using the following command:
    
@@ -86,5 +86,5 @@ The program assumes a transaction fee of `0.00001 BTC` by default. This fee is c
 
 ---
 ## Acknowledgement  
-- Prof. Subhra Mazumdar, for the project idea and concepts of Bitcoin scripting & adressing formats.  
+- Prof. Subhra Mazumdar, for the project idea and concepts of Bitcoin scripting & addressing formats.  
 - A very helpful documentation of Bitcoind access with Python on [Github](https://github.com/BlockchainCommons/Learning-Bitcoin-from-the-Command-Line/blob/master/18_4_Accessing_Bitcoind_with_Python.md).  
