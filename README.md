@@ -47,20 +47,25 @@ The program assumes a transaction fee of `0.00001 BTC` by default. This fee is c
 ## How to Run the Python Codes ?
 1. The programs require you to have Bitcoin Core software and Python IDLE package installed on your device.
 2. Install and configure `bitcoind` on your system.
-3. For a Windows device, open File Explorer and go to the location `C:\Users\<username>\AppData\Roaming\Bitcoin`<br>
+3. Install the Python library `python-bitcoinrpc` using the following command:
+   
+	```
+	pip install python-bitcoinrpc
+	```
+5. For a Windows device, open File Explorer and go to the location `C:\Users\<username>\AppData\Roaming\Bitcoin`<br>
    ( Replace `<username>` with your actual username ).
-5. Store the given `bitcoin.conf` file in this Bitcoin directory.
-6. Open Command Prompt and enter the following commands to launch Bitcoin Core in regtest mode:
+6. Store the given `bitcoin.conf` file in this Bitcoin directory.
+7. Open Command Prompt and execute the following commands to launch Bitcoin Core in regtest mode:
    
 	```
 	cd "C:\Program Files\Bitcoin\daemon"
 	bitcoind.exe -regtest
 	```
-7. Run the `Legacy_1.py` code in a code editor or Python IDLE to create the transaction `A → B` and extract the challenge script `ScriptPubKey`.
-8. After that, run the `Legacy_2.py` code to create the transaction `B → C` and extract the response script `ScriptSig`.
-9. Before proceeding to execute the `SegWit.py` code, it is recommended to delete the transactions data stored during execution of Legacy codes to avoid any interference with SegWit code execution.
-10. To delete that data, first close the Command Prompt window and then delete the `regtest` directory from inside the `Bitcoin` directory (location provided in step 3). After that, repeat step 5.
-11. Now, run the `SegWit.py` code to create similar transactions and scripts in SegWit address format.
+8. Run the `Legacy_1.py` code in a code editor or Python IDLE to create the transaction `A → B` and extract the challenge script `ScriptPubKey`.
+9. After that, run the `Legacy_2.py` code to create the transaction `B → C` and extract the response script `ScriptSig`.
+10. Before proceeding to execute the `SegWit.py` code, it is recommended to delete the transactions data stored during execution of Legacy codes to avoid any interference with SegWit code execution.
+11. To delete that data, first close the Command Prompt window and then delete the `regtest` directory from inside the `Bitcoin` directory (location provided in step 3). After that, repeat step 5.
+12. Now, run the `SegWit.py` code to create similar transactions and scripts in SegWit address format.
 
 ## How To Validate The Extracted Scripts ?
 1. Open  Command Prompt and execute the following command to connect to the Bitcoin Debugger server:
